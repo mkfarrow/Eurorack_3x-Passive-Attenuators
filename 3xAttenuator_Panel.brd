@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -47,6 +47,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6bXl1dzIwNDI" projecturn="a.YnVzaW5lc3M6bXl1dzIwNDIjRDIwMjIwNzA2NTM3OTQ1NzI2" f3durn="urn:adsk.wipprod:dm.lineage:LjT36yluSmCSGNf1lESbmw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="d39b9102-7203-455c-a2f4-7e7dec62d4b4" lastsyncedrevisionid="d39b9102-7203-455c-a2f4-7e7dec62d4b4" lastboardhashguid="234649e8-48d3-80fb-9ba4-a1ab230a0779" lastpushedtime="2022-12-21T20:20:05Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="128.5" width="0" layer="20"/>
 <wire x1="0" y1="128.5" x2="20" y2="128.5" width="0" layer="20"/>
@@ -294,12 +295,19 @@ design rules under a new name.</description>
 <signals>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF000000"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+</compatibility>
 </eagle>
